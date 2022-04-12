@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: rgb(0, 0, 0);
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+/* MAKING THE BUTTONS ALIGN IN 4 ROWS */
+.cal {
+     box-shadow: 5px, 5px, 13px, #fff, 5px, 5px, 13px, rgb(0, 0, 0, .16);
+     border-radius: 20px;
+     padding: 40px;
+     display: grid;
+     grid-template-columns: repeat(4,60px);
+}
+
+/* BUILDING THE NUMBER DISPLAY WINDOW */
+
+input {
+    grid-column: span 4;
+    height: 68px;
+    width: 248px;
+    box-shadow: inset -5px, -5px, 13px, #fff, inset 5px, 5px, 13px, rgb(0, 0, 0, .16);
+    border: none;
+    background-color: #f3f2f2;
+    /* border-radius: 32px; */
+    color: #808080;
+    text-align: end;
+    margin: 25px, 0, 20px, 0;
+    padding: 20px;
+    font-size: 30px;
+}
+
+/* WORKING ON THE NUMBER PAD */
+
+button {
+    box-shadow: inset 5px, 5px, 13px, #fff, 5px, 5px, 13px, rgb(0, 0, 0, .16);
+    border: none;
+    background-color: #f3f2f2;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
